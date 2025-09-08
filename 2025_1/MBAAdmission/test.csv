@@ -1,0 +1,100 @@
+application_id,gender,international,gpa,major,race,gmat,work_exp,work_industry,admission
+13,Female,False,3.24,Humanities,Hispanic,640.0,6.0,PE/VC,Waitlist
+51,Male,False,3.26,Business,White,670.0,6.0,Consulting,Waitlist
+72,Female,False,3.33,Humanities,Hispanic,680.0,5.0,Consulting,Waitlist
+76,Female,False,3.24,Humanities,Hispanic,590.0,4.0,Nonprofit/Gov,Waitlist
+94,Female,False,3.23,Humanities,White,620.0,7.0,Nonprofit/Gov,Admit
+119,Male,False,3.33,Humanities,White,680.0,4.0,Financial Services,Admit
+200,Male,False,3.5,STEM,Hispanic,700.0,6.0,Investment Management,Admit
+209,Male,False,3.35,Business,White,660.0,5.0,Consulting,Admit
+212,Female,False,3.44,Business,White,750.0,5.0,Technology,Admit
+283,Male,False,3.58,Business,White,740.0,4.0,Investment Banking,Admit
+345,Female,False,2.96,Humanities,White,580.0,7.0,Financial Services,Admit
+366,Female,False,3.27,Business,White,660.0,4.0,Consulting,Admit
+401,Male,False,3.15,Humanities,Black,610.0,6.0,Consulting,Reject
+416,Female,False,3.13,Humanities,Asian,670.0,4.0,Technology,Waitlist
+426,Female,True,3.0,Humanities,,630.0,5.0,Consulting,Admit
+438,Female,False,3.12,Humanities,Asian,600.0,3.0,Technology,Waitlist
+466,Female,False,3.37,Humanities,Asian,640.0,4.0,Health Care,Waitlist
+467,Male,False,3.35,Business,White,760.0,5.0,Health Care,Reject
+468,Female,False,3.19,Humanities,Asian,660.0,4.0,Health Care,Waitlist
+476,Female,False,3.1,Business,Asian,640.0,6.0,Consulting,Waitlist
+508,Female,False,3.28,Humanities,Asian,690.0,4.0,Technology,Waitlist
+511,Female,False,3.51,STEM,Asian,780.0,5.0,PE/VC,Waitlist
+541,Female,True,3.16,Humanities,,690.0,4.0,Consulting,Admit
+733,Female,False,3.37,Business,White,710.0,5.0,Consulting,Waitlist
+747,Female,True,3.29,Humanities,,710.0,4.0,Investment Banking,Admit
+767,Female,True,3.65,Humanities,,630.0,6.0,Consulting,Waitlist
+773,Female,True,2.9,STEM,,650.0,5.0,Technology,Waitlist
+825,Female,False,3.28,Humanities,White,610.0,5.0,CPG,Waitlist
+827,Male,False,3.26,STEM,Black,630.0,6.0,Technology,Reject
+868,Male,False,3.52,STEM,Asian,710.0,5.0,Media/Entertainment,Admit
+1035,Male,False,3.44,Humanities,Other,710.0,7.0,Other,Admit
+1054,Female,False,3.21,Business,Black,610.0,5.0,PE/VC,Reject
+1189,Male,False,3.38,Humanities,Other,700.0,6.0,Consulting,Waitlist
+1340,Female,False,3.38,Humanities,Asian,670.0,6.0,Investment Banking,Admit
+1346,Male,True,3.47,STEM,,720.0,7.0,Investment Banking,Admit
+1407,Male,False,3.37,Business,Black,610.0,4.0,Nonprofit/Gov,Reject
+1603,Female,False,3.18,STEM,White,640.0,4.0,Investment Management,Reject
+1649,Male,False,3.13,Business,White,630.0,4.0,Nonprofit/Gov,Reject
+1663,Female,False,3.35,Business,White,700.0,7.0,Consulting,Admit
+1742,Female,True,3.47,STEM,,690.0,4.0,Technology,Admit
+1988,Female,True,3.2,Business,,640.0,6.0,Energy,Reject
+2197,Male,False,2.84,Business,Asian,590.0,5.0,PE/VC,Reject
+2205,Male,False,3.46,Humanities,White,690.0,5.0,Nonprofit/Gov,Reject
+2277,Male,False,3.38,Humanities,Black,740.0,4.0,Consulting,Waitlist
+2296,Female,False,3.34,STEM,Black,680.0,6.0,PE/VC,Admit
+2369,Female,False,3.32,Business,Hispanic,670.0,6.0,Investment Banking,Reject
+2443,Male,False,3.36,STEM,White,670.0,5.0,Financial Services,Waitlist
+2549,Female,True,3.17,Business,,670.0,5.0,Technology,Reject
+2584,Male,False,3.63,Business,White,720.0,5.0,Technology,Admit
+2646,Male,False,3.46,Humanities,White,760.0,5.0,Consulting,Waitlist
+2935,Male,False,2.93,Humanities,White,590.0,7.0,Consulting,Reject
+2940,Male,False,3.05,Humanities,Hispanic,660.0,7.0,Financial Services,Reject
+3091,Male,False,3.35,Business,White,720.0,6.0,Investment Banking,Admit
+3181,Female,False,3.39,Business,Black,660.0,6.0,Consulting,Admit
+3196,Male,False,3.08,STEM,Asian,630.0,6.0,PE/VC,Reject
+3198,Female,False,3.01,Humanities,Asian,580.0,6.0,Investment Banking,Reject
+3219,Male,False,3.28,STEM,Other,660.0,6.0,PE/VC,Waitlist
+3253,Male,False,3.27,Humanities,White,730.0,6.0,Investment Banking,Admit
+3281,Male,False,3.31,Business,Black,780.0,4.0,Technology,Waitlist
+3380,Male,False,3.44,STEM,Black,670.0,7.0,Nonprofit/Gov,Waitlist
+3415,Male,False,3.19,Humanities,Other,670.0,5.0,Nonprofit/Gov,Reject
+3417,Male,False,3.02,Humanities,Asian,620.0,4.0,Consulting,Reject
+3436,Female,True,3.3,STEM,,650.0,4.0,Nonprofit/Gov,Reject
+3489,Male,True,3.26,STEM,,660.0,3.0,Investment Management,Reject
+3644,Male,True,3.55,STEM,,750.0,6.0,Health Care,Admit
+3664,Male,True,3.28,Business,,660.0,6.0,Financial Services,Admit
+3686,Female,True,3.28,Business,,730.0,6.0,Nonprofit/Gov,Reject
+3718,Female,False,3.39,STEM,Black,650.0,7.0,PE/VC,Reject
+3738,Female,False,3.31,Business,Black,660.0,4.0,Consulting,Waitlist
+3772,Female,False,3.13,Humanities,Other,660.0,4.0,Other,Reject
+3790,Female,False,3.29,Humanities,White,640.0,5.0,PE/VC,Reject
+4052,Female,False,3.36,Business,Black,680.0,4.0,Technology,Reject
+4105,Male,False,3.24,STEM,Black,680.0,5.0,Nonprofit/Gov,Waitlist
+4123,Male,False,3.42,Business,Hispanic,660.0,6.0,Other,Reject
+4229,Male,False,3.27,Humanities,Black,720.0,4.0,Other,Admit
+4283,Male,True,3.38,Humanities,,660.0,3.0,Nonprofit/Gov,Waitlist
+4386,Male,False,3.47,STEM,White,760.0,5.0,Other,Waitlist
+4447,Male,False,3.36,Humanities,Other,700.0,5.0,CPG,Admit
+4569,Male,False,3.22,Humanities,White,700.0,7.0,Financial Services,Waitlist
+4613,Female,True,3.54,STEM,,680.0,6.0,Consulting,Admit
+4680,Male,False,3.45,Humanities,Asian,710.0,5.0,Investment Banking,Waitlist
+4791,Female,False,3.38,Business,White,720.0,5.0,Consulting,Admit
+4887,Male,False,3.53,STEM,Hispanic,700.0,4.0,Health Care,Admit
+4938,Female,False,3.48,Humanities,Black,710.0,5.0,Consulting,Waitlist
+5001,Male,True,3.35,STEM,,760.0,5.0,PE/VC,Admit
+5189,Male,True,3.1,Humanities,,620.0,5.0,Consulting,Reject
+5241,Male,True,3.29,Humanities,,650.0,3.0,Consulting,Reject
+5334,Female,False,3.18,Humanities,Black,650.0,5.0,Technology,Reject
+5373,Female,False,3.23,Business,Black,660.0,6.0,Consulting,Admit
+5481,Male,False,3.41,Humanities,Black,650.0,6.0,Investment Management,Reject
+5516,Male,True,3.39,STEM,,610.0,3.0,Consulting,Reject
+5545,Male,True,3.49,STEM,,700.0,5.0,Nonprofit/Gov,Waitlist
+5569,Female,False,3.15,Business,Other,610.0,4.0,Consulting,Reject
+5614,Male,False,3.26,STEM,White,720.0,6.0,Nonprofit/Gov,Admit
+5688,Male,False,3.55,Business,Hispanic,660.0,4.0,Technology,Admit
+5836,Male,False,3.56,STEM,Hispanic,770.0,5.0,Financial Services,Waitlist
+5891,Male,True,3.21,STEM,,670.0,5.0,Nonprofit/Gov,Waitlist
+6007,Male,False,3.43,Business,Asian,670.0,3.0,Consulting,Waitlist
+6193,Male,True,3.36,Business,,590.0,5.0,Other,Reject
