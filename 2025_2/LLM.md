@@ -19,6 +19,7 @@ GQA 和通常的多头注意力有什么区别？“reduce the size of key-value
 
 
 # Answer(Detailed Ver.)
+**PS**: (probably) Only involves necessary knowledge to answer the questions above.
 ## 1.
 - **MHA**(multi-head attention): every query head has its own key head and value head.
 - **GQA**(grouped query attention): query heads are divided into groups, with each group sharing a key head and a value head.
@@ -63,39 +64,15 @@ This shrinks the **KV cache** size, which leads to:
 1. more stable. In stage 1, they start with a lower batch size and increase it subsequently, which proves to be very stable
 2. able to adjust training data in different stages and gaps, which allows better performance on particular fields with less cost
 3. separate the expensive compute in self-attention layers to a single stage, stage 2
-4. the annealing stage (probably) tunes the parameters finer
+4. the annealing stage tunes the parameters finer(which can be in rigorous 1 stage training, but it should result in worse performance)
 ## 5.
-后训练的 LLM 需要 chat template，是因为模型需要一个标准化的对话协议来区分 system / user / assistant 的角色，保证多轮交互（尤其是包含工具调用等复杂场景）能被模型稳定理解和执行。
-
+LLM in post-training needs chat template for:
+1. tuning for human-AI interaction -- the model needs to understand human instructions and perform conversational tasks.
+2. helping the model know the source and destination of each message in a conversation
+3. helping it know when to alternate between human and AI to speak.
+4. the model to generate multiple messages and send them to different locations to finish tasks in a single dialog turn
 ## 6.
-### **Reward Model 的作用**
-
-1. **作为后训练的核心骨干之一**
-    
-    - 整个对齐流程由 **预训练模型 + reward model** 共同构成。
-        
-    - reward model 是建立在预训练 checkpoint 之上的，使用人工偏好数据（preference data）进行训练。
-        
-2. **学习人类偏好**
-    
-    - 每个样本包含若干个模型回答：被选中的（chosen）、被拒绝的（rejected），有时还有人工编辑后的更优回答（edited）。
-        
-    - reward model 通过这些排序信息（edited > chosen > rejected）学会为不同回答打分，从而量化“人类更喜欢哪个”。
-        
-3. **为后续步骤提供信号**
-    
-    - **监督微调（SFT）**：reward model 用于对人类标注数据进行 _rejection sampling_，筛掉质量差的回答，只保留高分回答来训练语言模型。
-        
-    - **DPO（Direct Preference Optimization）**：reward model 的打分机制相当于隐含在优化目标中，帮助模型在对比正负回答时调整生成概率。
-        
-    - **数据质量控制**：reward model 还被用来清理带有错误推理步骤的训练样本，保证 finetuning 的数据有效性。
-        
-4. **贯穿多个训练循环**
-    
-    - 后训练不是一次性完成，而是分成多轮迭代（iterative rounds）。在每一轮里，都会重新收集新的 preference data，再训练或更新 reward model，用它来指导当轮的 SFT / DPO。
-        
-
----
-
-✅ **一句话总结**：  
-Reward model 在 Llama 3 的后训练中起到“人类偏好打分器”的作用，它把人工偏好转化为数值信号，贯穿数据筛选、SFT、DPO 和多轮迭代，确保最终语言模型的回答更符合人类预期。
+The **reward model(RM)**:
+1. is used to perform rejection sampling(RS) in human annotation prompts, which yield data later used for supervised finetuning(SFT)
+2. is used during RS to select best candidate output to help get SFT data.
+3. during data pruning, yields part of the final score of each sample, RM-based score. They select examples with high scores by RM *or* Llama-based filter

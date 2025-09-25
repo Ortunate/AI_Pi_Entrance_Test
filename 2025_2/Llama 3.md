@@ -104,4 +104,17 @@ rounds of post-training/human feedback -> aligned model
 post-training involves SFT followed by DPO
 ## 4.1 Modeling
 	backbone = reward_model + language_model
-	
+### 4.1.1 Chat Dialog Format
+	define a chat dialog protocol
+	design a multi-message chat protocol with sp header and termination tokens
+### 4.1.2 Reward Modeling
+### 4.1.3 Supervised Finetuning
+### 4.1.4 DPO
+### 4.1.5 Model Averaging
+### 4.1.6 Iterative Rounds
+## 4.2 Post-training Data
+The post-training data composition plays a critical role in the usefulness and behavior of language models.
+### 4.2.1 Preference Data
+### 4.2.2 SFT Data
+### 4.2.3 Data Processing and Quality Control
+
